@@ -88,4 +88,4 @@ where `dQ` is the distance to the nearest marker.
 - **Noé Mosca**
 - **Baptiste Vibert**
 
-Project completed as part of a computer vision module (IMA05 final project).
+Project completed as part of a computer vision module (IMA01 final project).
