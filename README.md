@@ -1,15 +1,15 @@
-# 💧 Waterpixels: Superpixel Segmentation using Watershed Transform
+#  Waterpixels: Superpixel Segmentation using Watershed Transform
 
 This project implements and analyzes the performance of a superpixel segmentation method called **Waterpixels**, which produces contour-adherent segments using a watershed-based algorithm.
 
-## 📘 Project Overview
+##  Project Overview
 
 Based on the method described in the article *"Waterpixels"*, the goal is to implement two variants of waterpixels:
 
 - **c-waterpixels**: superpixels based on regular grid cell centers
 - **m-waterpixels**: superpixels using extinction regions of minimal gradient
 
-## 🧩 Methodology
+##  Methodology
 
 ### Step-by-step Process:
 1. Compute the **morphological gradient** of the grayscale or HSV image.
@@ -23,7 +23,7 @@ where `dQ` is the distance to the nearest marker.
 
 ---
 
-## 🔬 Variants
+##  Variants
 
 ### ◼️ c-Waterpixels
 - Use square or hexagonal cells with fixed markers at the center.
@@ -37,7 +37,7 @@ where `dQ` is the distance to the nearest marker.
 
 ---
 
-## 🧪 Parameter Sensitivity
+##  Parameter Sensitivity
 
 - **`k` (gradient regularization):**
 - Low `k` → better contour adherence, irregular shapes
@@ -50,7 +50,7 @@ where `dQ` is the distance to the nearest marker.
 
 ---
 
-## 🎨 Color Support
+##  Color Support
 
 - Input RGB images are converted to **HSV**
 - Gradients computed per channel then averaged
@@ -58,7 +58,7 @@ where `dQ` is the distance to the nearest marker.
 
 ---
 
-## ⏱️ Performance
+##  Performance
 
 - **Linear time complexity** in the number of pixels
 - `c-waterpixels` are faster than `m-waterpixels`
@@ -66,7 +66,7 @@ where `dQ` is the distance to the nearest marker.
 
 ---
 
-## ⚙️ Technologies Used
+##  Technologies Used
 
 - **Python**
 - **NumPy** / **Matplotlib**
@@ -76,14 +76,14 @@ where `dQ` is the distance to the nearest marker.
 
 ---
 
-## 📸 Example Results
+##  Example Results
 
 - Visualizations compare various configurations (k, spacing, cell types)
 - Overlap between contours from waterpixels and real image contours is computed using OpenCV
 
 ---
 
-## 👥 Authors
+##  Authors
 
 - **Noé Mosca**
 - **Baptiste Vibert**
